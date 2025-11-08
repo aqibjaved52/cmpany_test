@@ -100,7 +100,7 @@ export async function POST(request: NextRequest) {
         emailStatus.sent = false;
         emailStatus.error = emailResult.error.message || 'Failed to send email';
         console.error('Resend error:', emailResult.error.message);
-      } else if (emailResult?.id || emailResult?.data?.id) {
+      } else if (emailResult?.data?.id) {
         emailStatus.sent = true;
       } else {
         emailStatus.sent = false;
