@@ -1,0 +1,18 @@
+# Test files - not needed for deployment
+*.sh
+test-api.sh
+check-email-status.sh
+
+# Documentation files
+TROUBLESHOOT_EMAIL.md
+DEBUG_EMAIL.md
+EMAIL_VERIFICATION.md
+TESTING.md
+
+# Local development files
+.env.local
+.env*.local
+
+# SQL schema (optional - you can include this if you want)
+# supabase-schema.sql
+
